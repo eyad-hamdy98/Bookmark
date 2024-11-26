@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(250, 236, 222);
+    font-family: "PT Sans Caption", serif;
+
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 48px;
+    color: rgb(53, 46, 40);
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+h1::after {
+    content: "";
+    background-color: rgb(252, 181, 67);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    z-index: -1;
+    transition: all 0.3s;
+    
+}
+
+h1:hover::after{
+    position: absolute;
+    top: 40%;
+}
+
+h1::selection {
+    background-color: rgb(252, 181, 67);
+
+}
+
+
+.line {
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+}
+
+.bookmark {
+    background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(181, 172, 73));
+    background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-family: "Righteous", serif;
+    font-size: 24px;
+    width: fit-content;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
